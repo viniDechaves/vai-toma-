@@ -1,0 +1,49 @@
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FFEB3B; /* Amarelo claro para o fundo do site */
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #FFFFFF; /* Cor branca para o fundo do cabeçalho */
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #000; /* Linha preta para separar o cabeçalho do resto */
+        }
+        .header img {
+            max-width: 100px; /* Tamanho da logo */
+            vertical-align: middle;
+        }
+        .header h1 {
+            display: inline;
+            margin: 0;
+            font-size: 24px;
+            color: #000;
+        }
+        .header p {
+            margin: 0;
+            font-size: 16px;
+            color: #666;
+        }
+        /* Estilo padrão para telas grandes (desktop) */
+        .header .tagline {
+            display: block;
+        }
+        /* Estilo para tablets */
+        @media (max-width: 768px) {
+            .header .tagline {
+                display: none;
+            }
+        }
+        /* Estilo para celulares */
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 20px;
+            } 
+            .header img {
+                max-width: 80px;
+            }
+            .header .tagline {
+                display: none;
+            }
+        }
