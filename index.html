@@ -1,22 +1,67 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>LV Culinária</title>
+    <title>LV Culinaria</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FFEB3B; /* Amarelo claro para o fundo do site */
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #FFFFFF; /* Cor branca para o fundo do cabeçalho */
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #000; /* Linha preta para separar o cabeçalho do resto */
+        }
+        .header img {
+            max-width: 100px; /* Tamanho da logo */
+            vertical-align: middle;
+        }
+        .header h1 {
+            display: inline;
+            margin: 0;
+            font-size: 24px;
+            color: #000;
+        }
+        .header p {
+            margin: 0;
+            font-size: 16px;
+            color: #666;
+        }
+        /* Estilo padrão para telas grandes (desktop) */
+        .header .tagline {
+            display: block;
+        }
+        /* Estilo para tablets */
+        @media (max-width: 768px) {
+            .header .tagline {
+                display: none;
+            }
+        }
+        /* Estilo para celulares */
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 20px;
+            }
+            .header img {
+                max-width: 80px;
+            }
+            .header .tagline {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header class="cabecalho">
-        <div class="container">
-            <img class="container__imagem" src="re2/images.png" alt="Logotipo">
-            <h1 class="container__titulo">
-Restaurante<b class="container__titulo--negrito">Start</b>
-</h1>
-            <p class="tagline">
-"Seu destino para experiências gastronômicas inesquecíveis!"
-</p>
-        </div>
+    <header class="header">
+        <img src="re2" alt="Logo LV Culinaria"> <!-- Substitua 'logo.png' pelo caminho da sua logo -->
+        <img src="re2/images.png" alt="Logo LV Culinaria"> <!-- Substitua 'logo.png' pelo caminho da sua logo -->
+        <h1>LV Culinaria</h1>
+        <p class="tagline">Seu destino para experiências gastronômicas inesquecíveis!</p>
     </header>
 </body>
 </html>
